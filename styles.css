@@ -12,7 +12,9 @@
     margin: 0;
     font-family: Roboto, serif;
     font-size: 16px;
+    scroll-behavior: smooth;
 }
+
 
 header {
     width: 100%;
@@ -72,7 +74,7 @@ img {
     aspect-ratio: 16 / 9;
 }
 .hero-info h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--main-text-color);
     margin-bottom: 1rem;
     font-weight: 900;
