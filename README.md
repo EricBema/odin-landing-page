@@ -1,1 +1,1 @@
-# odin-landing-recipes
+# odin-landing-page
