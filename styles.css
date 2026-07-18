@@ -85,7 +85,7 @@ img {
 
 .sign-up-btn {
     border: none;
-    width: 10rem;
+    width: fit-content;
     background-color: var(--button-color);
     color: var(--hero-secondary-text);
     font-weight: 700;
@@ -182,6 +182,9 @@ blockquote {
 .cta-text{
     color: var(--main-text-color);
     flex: 0 1 40rem;
+}
+.cta-text h3{
+    margin-bottom: 0.5rem;
 }
 .cta-button {
     border: 2px solid var(--main-text-color);
