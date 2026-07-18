@@ -47,14 +47,17 @@ header {
    color: var(--hero-secondary-text);
    text-decoration: none;
 }
+.nav-links a:hover {
+    text-decoration: underline;
+}
 #hero {
     grid-area: hero;
     background-color: var(--hero-footer-color);
     min-height: 80vh;
     display: flex;
     flex-wrap: wrap;
-    padding: 4rem;
-    gap: 5rem;
+    padding: 4rem 2rem;
+    gap: 3rem;
     justify-content: center;
     align-items: center;
 }
@@ -93,6 +96,10 @@ img {
     font-size: 1.2rem;
     border-radius: 16px;
     cursor: pointer;
+    transition: transform 0.5s ease;
+}
+.sign-up-btn:hover {
+    transform: translateY(-4px);
 }
 
 #info-section {
@@ -122,6 +129,10 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 .card-border {
     width: 160px;
@@ -176,7 +187,7 @@ blockquote {
     align-items: center;
     background-color: var(--button-color);
     padding: 2rem 5rem;
-    border-radius: 10px;
+    border-radius: 14px;
     gap: 2rem;
 }
 .cta-text{
