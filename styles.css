@@ -143,6 +143,7 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 .quote-content {
     width: 70%;
@@ -154,11 +155,10 @@ blockquote {
     font-style: italic;
     color: var(--hero-footer-color);
     font-weight: 300;
+    margin-bottom: 1rem;
 }
 #quote-section p {
-    font-weight: 700;
-    display: flex;
-    justify-content: flex-end;
+    font-weight: 700; 
 }
 
 #call-to-action-section {
