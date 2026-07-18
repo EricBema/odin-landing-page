@@ -16,6 +16,7 @@ body {
     font-family: Roboto, serif;
     font-size: 16px;
     scroll-behavior: smooth;
+
 }
 
 
@@ -48,31 +49,31 @@ header {
    text-decoration: none;
 }
 main {
-   display: grid;
-   grid-template-areas: 
-    "hero"
-    "info-section"
-    "quote-section"
-    "call-to-action-section"
-   ;
+   
 }
 #hero {
     grid-area: hero;
     background-color: var(--hero-footer-color);
     min-height: 80vh;
     display: flex;
+    flex-wrap: wrap;
     padding: 4rem;
-    justify-content: space-between;
+    gap: 5rem;
+    justify-content: center;
     align-items: center;
 }
 .hero-info{
     display: flex;
+    flex: 0 1 36rem;
     flex-direction: column;
     width: 400px;
 }
 img {
-    width: 55%;
-    height: auto;
+   object-fit: cover;
+   object-position: bottom;
+   border-radius: 10px;
+   width: 40rem;
+   height: auto;
     aspect-ratio: 16 / 9;
 }
 .hero-info h1 {
@@ -194,4 +195,5 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
