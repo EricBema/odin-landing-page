@@ -11,12 +11,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body {
     font-family: Roboto, serif;
-    font-size: 16px;
-    scroll-behavior: smooth;
-
+    font-size: 16px; 
 }
 
 
@@ -48,9 +47,6 @@ header {
    color: var(--hero-secondary-text);
    text-decoration: none;
 }
-main {
-   
-}
 #hero {
     grid-area: hero;
     background-color: var(--hero-footer-color);
@@ -72,7 +68,7 @@ img {
    object-fit: cover;
    object-position: bottom;
    border-radius: 10px;
-   width: 40rem;
+   width: min(40rem, 100%);
    height: auto;
     aspect-ratio: 16 / 9;
 }
@@ -100,14 +96,13 @@ img {
 }
 
 #info-section {
-    grid-area: info-section;
-    height: 500px;
     text-align: center;
     padding: 0 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 1rem 1rem 3rem 1rem;
 }
 #info-section h2{
     font-size: 36px;
@@ -118,6 +113,8 @@ img {
     display: flex;
     align-items: center;
     gap: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .card {
     width: 180px;
@@ -141,7 +138,7 @@ img {
 #quote-section {
     grid-area: quote-section;
     background-color: var(--quote-background);
-    height: 500px;
+    padding: 4rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -165,7 +162,7 @@ blockquote {
 }
 
 #call-to-action-section {
-    height: 300px;
+    padding: 5rem 0;
     display: flex; 
     justify-content: center;
     align-items: center;
@@ -173,14 +170,18 @@ blockquote {
 .cta-banner {
     width: 70%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
     align-items: center;
     background-color: var(--button-color);
     padding: 2rem 5rem;
     border-radius: 10px;
+    gap: 2rem;
 }
 .cta-text{
     color: var(--main-text-color);
+    flex: 0 1 40rem;
 }
 .cta-button {
     border: 2px solid var(--main-text-color);
